@@ -1,0 +1,11 @@
+.navbar {
+    color: white;
+}
+
+.logout{
+    visibility: hidden;
+}
+
+.visible {
+    visibility: initial !important;
+}
