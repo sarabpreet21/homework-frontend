@@ -9,3 +9,8 @@
 .visible {
     visibility: initial !important;
 }
+
+.display {
+    display: block !important;
+    right: 10px;
+}

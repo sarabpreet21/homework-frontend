@@ -17,6 +17,7 @@ export class UsersService {
     return this.http.post<User>(`${this.apiServerUrl}/user/add`, user);
   }
 
+  //9215676766
   public updateUser(user: User): Observable<User> {
     return this.http.put<User>(`${this.apiServerUrl}/user/update`, user);
   }
@@ -30,7 +31,7 @@ export class UsersService {
     return this.http.get<User>(`${this.apiServerUrl}/user/find/${userEmail}`)
   }
   public findUserById(id:number):Observable<User>{
-    
+                                                                                                                                                                        
     return this.http.get<User>(`${this.apiServerUrl}/user/findbyid/${id}`)
   }
   constructor(private http: HttpClient) { }

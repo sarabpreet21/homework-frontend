@@ -19,6 +19,7 @@
     "@angular/platform-browser-dynamic": "~13.2.0",
     "@angular/router": "~13.2.0",
     "@ngrx/store": "^13.0.2",
+    "@popperjs/core": "^2.11.5",
     "mat-icon-import": "^0.1.1",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",

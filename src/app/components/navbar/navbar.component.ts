@@ -13,10 +13,16 @@ import { IAppState } from 'src/app/store/state/app.state';
 export class NavbarComponent implements OnInit {
   username$=  this._store.pipe(select(selectUserName));
   display:boolean = false;
+  menuDisplay:boolean  = false;
 
   constructor(private _store: Store<IAppState>,private router: Router) { 
     console.log(this.display);
     
+  }
+  handleDropDown(){
+    // let menu = document.querySelector(".dropdown-menu")?.classList.add('display')
+    
+    this.menuDisplay = !this.menuDisplay;
   }
   handleLogout(){
     this._store.dispatch(new GetUser(""))

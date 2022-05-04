@@ -6,4 +6,16 @@
     <span routerLink="" style="font-weight: 600;align-self: flex-end;">Dashboard</span>
     <span (click)="handleLogout()" class="logout" style="font-weight: 600;align-self: flex-end;">Logout</span>
 
+    <div (click)="handleDropDown()" class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Dropdown
+        </button>
+        <div class="dropdown-menu" [ngClass]="menuDisplay?'display':''" aria-labelledby="dropdownMenu2">
+            <button class="dropdown-item" type="button">Action</button>
+            <button class="dropdown-item" type="button">Another action</button>
+            <button class="dropdown-item" type="button">Something else here</button>
+        </div>
+    </div>
+
 </div>
